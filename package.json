@@ -1,6 +1,7 @@
 {
   "name": "ld-multidemo",
   "version": "0.1.0",
+  "homepage": "https://ld-sfalzon.github.io/ld-multidemo",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
