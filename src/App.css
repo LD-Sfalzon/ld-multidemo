@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   height: 100vh;
+  background-color: #000000
 }
 
 .App-logo {
@@ -8,25 +9,69 @@
   pointer-events: none;
 }
 
-.iFrame {
-  height:77vh;
-  width:22vw;
-  padding: 1vw;
-  border-style: none;
+.ddComponent {
+  color: #183f49;
+  background-color: #183f49;
 }
 
-.loginForm{
-  text-align: center;
+.logoImage{
+  
+  max-width:1px auto;
+
 }
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.column-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow columns to wrap to the next line if necessary */
+}
+.column-container-lined {
+  display: flex;
+  border-left-width: 2px;
+  border-right-width: 1px;
+  
+  border-color: #282c34;
+  border-width: 1px;
+  flex-wrap: wrap; /* Allow columns to wrap to the next line if necessary */
+}
+.column {
+  width: 25%; /* Adjust the width to control the number of columns */
+  padding: 10px; /* Add padding for spacing between columns */
+}
+.column-lined {
+  width: 25%; /* Adjust the width to control the number of columns */
+  border-left-width: 2px;
+  border-right-width: 1px;
+  border-color: #282c34;
+  border-width: 1px;
+  padding: 10px; /* Add padding for spacing between columns */
+}
+
+.singlecolumn {
+  width: 50vw; /* Adjust the width to control the number of columns */
+  min-width: 90vw;
+  max-width: 500px;
+  margin:  auto;
+}
+.chatBox {
+  position: relative;
+  bottom: 0;
+  right:0;
+  align-items: right;
+}
+
+.searchBox {
+  width: 100%;
+}
+.chatButton {
+  position: relative;
+  bottom: 0;
+  right:100;
+  align-items: right;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 10vh;
+  min-height: 5vh;
+  padding-bottom: 1vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,15 +80,17 @@
   color: white;
 }
 
+
+
+.overcentre {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  
+}
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
